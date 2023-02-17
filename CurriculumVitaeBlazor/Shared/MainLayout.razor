@@ -1,13 +1,35 @@
 ﻿@inherits LayoutComponentBase
 
 
-<div class="container-fluid">
+@*<div class="container-fluid">
     <div class="row p-3" style="height:100vh;">
-        <div class="col-3">
+        <div class="col-3" id="navmenu">
             <NavigationMenu />
         </div>
-        <div class="col-9 mb-4">
+        <div class="col-9 mb-4" id="experience">
             <Experience />
         </div>
     </div>
-</div>
+</div>*@
+<MediaQuery Media="@Breakpoints.MediumDown">
+    <Matched>
+        <div class="row p-3" style="height:100vh;">
+            <div class="col-4" id="navmenu">
+                <NavigationMenu />
+            </div>
+            <div class="col-8 mb-4" id="experience">
+                <Experience />
+            </div>
+        </div>
+    </Matched>
+    <Unmatched>
+        <div class="row p-3" style="height:100vh;">
+            <div class="col-3" id="navmenu">
+                <NavigationMenu />
+            </div>
+            <div class="col-9 mb-4" id="experience">
+                <Experience />
+            </div>
+        </div>
+    </Unmatched>
+</MediaQuery>

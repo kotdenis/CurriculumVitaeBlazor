@@ -7,12 +7,20 @@
                 <div>
                     <div class="row ps-2 pt-4">
                         <div class="col">
-                            <img src="images/myphotoes.png" class="rounded-2 mx-auto d-block" style="width:15vw;height:35vh;" />
+                            <img src="images/myphotoes2.png" class="rounded-2 mx-auto d-block" style="width:15vw;height:35vh;" />
                         </div>
                     </div>
                     <div class="row p-2">
                         <div class="col">
-                            <h2 class="fw-bold text-center" style="color:#d1d5db">Денис Котельников</h2>
+                            <MediaQuery Media="@Breakpoints.MediumDown">
+                                <Matched>
+                                    <h3 class="fw-bold text-center" style="color:#d1d5db">Денис Котельников</h3>
+                                </Matched>
+                                <Unmatched>
+                                    <h2 class="fw-bold text-center" style="color:#d1d5db">Денис Котельников</h2>
+                                </Unmatched>
+                            </MediaQuery>
+                            
                             <div class="pt-3 d-flex flex-column" style="width:100%">
                                 <p class="fw-bold text-warning lh-1 mx-auto" style="font-size:1vw;"><i class="fa fa-phone"></i>&nbsp;Phone:&nbsp;+7 (988) 562 12 55</p>
                                 <p class="fw-bold text-warning lh-1 mx-auto" style="font-size:1vw;"><i class="fa-regular fa-at"></i>&nbsp;Email:&nbsp;kotdeniss2@yandex.ru</p>
